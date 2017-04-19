@@ -33,3 +33,10 @@ void ARobotCharacter2::SetupPlayerInputComponent(UInputComponent* PlayerInputCom
 
 }
 
+void ARobotCharacter2::GetRecipe()
+{
+	FuelTempEnum = static_cast<EFuelTempEnum>(rand() % 2);
+	FuelColorEnum = static_cast<EFuelColorEnum>(rand() % 7);
+	FuelFlavorEnum = static_cast<EFuelFlavorEnum>(rand() % 4);
+}
+

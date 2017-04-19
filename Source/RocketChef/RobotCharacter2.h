@@ -15,6 +15,37 @@ enum class ERobotColorEnum : uint8
 	RC_None		UMETA(DisplayName = "None")
 };
 
+UENUM(BlueprintType)		//"BlueprintType" is essential to include
+enum class EFuelTempEnum : uint8
+{
+	FT_Cold UMETA(DisplayName = "Cold"),
+	FT_Hot 	UMETA(DisplayName = "Hot"),
+	FT_None UMETA(DisplayName = "None")
+};
+
+UENUM(BlueprintType)		//"BlueprintType" is essential to include
+enum class EFuelColorEnum : uint8
+{
+	FC_Red 		UMETA(DisplayName = "Red"),
+	FC_Yellow 	UMETA(DisplayName = "Yellow"),
+	FC_Blue 	UMETA(DisplayName = "Blue"),
+	FC_Green	UMETA(DisplayName = "Green"),
+	FC_Orange 	UMETA(DisplayName = "Orange"),
+	FC_Purple 	UMETA(DisplayName = "Purple"),
+	FC_Black    UMETA(DisplayName = "Black"),
+	FC_None		UMETA(DisplayName = "None")
+};
+
+UENUM(BlueprintType)		//"BlueprintType" is essential to include
+enum class EFuelFlavorEnum : uint8
+{
+	FF_Salty 	UMETA(DisplayName = "Salty"),
+	FF_Sugary 	UMETA(DisplayName = "Sugary"),
+	FF_Spicy 	UMETA(DisplayName = "Spicy"),
+	FF_Peppery	UMETA(DisplayName = "Peppery"),
+	FF_None		UMETA(DisplayName = "None")
+};
+
 UCLASS()
 class ROCKETCHEF_API ARobotCharacter2 : public ACharacter
 {
@@ -35,5 +66,17 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Enum)
 		ERobotColorEnum RobotColorEnum;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Enum)
+		EFuelTempEnum FuelTempEnum;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Enum)
+		EFuelColorEnum FuelColorEnum;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Enum)
+		EFuelFlavorEnum FuelFlavorEnum;
+
+	UFUNCTION(BlueprintCallable, Category = "Robot")
+		void GetRecipe();
 
 };
