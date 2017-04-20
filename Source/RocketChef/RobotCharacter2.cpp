@@ -40,3 +40,7 @@ void ARobotCharacter2::GetRecipe()
 	FuelFlavorEnum = static_cast<EFuelFlavorEnum>(rand() % 4);
 }
 
+bool ARobotCharacter2::CheckRecipe(EFuelTempEnum fuelTemp, EFuelColorEnum fuelColor, EFuelFlavorEnum fuelFlavor)
+{
+	return (FuelTempEnum == fuelTemp) && (FuelColorEnum == fuelColor) && (FuelFlavorEnum == fuelFlavor);
+}

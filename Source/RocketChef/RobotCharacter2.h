@@ -79,4 +79,11 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Robot")
 		void GetRecipe();
 
+	UFUNCTION(BlueprintCallable, Category = "Robot")
+		bool CheckRecipe(
+			UPARAM(DisplayName = "FuelTemp") EFuelTempEnum FuelTemp,
+			UPARAM(DisplayName = "FuelColor") EFuelColorEnum FuelColor,
+			UPARAM(DisplayName = "FuelFlavor") EFuelFlavorEnum FuelFlavor);
+
+
 };
