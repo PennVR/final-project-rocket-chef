@@ -40,7 +40,6 @@ UENUM(BlueprintType)		//"BlueprintType" is essential to include
 enum class EFuelFlavorEnum : uint8
 {
 	FF_Salty 	UMETA(DisplayName = "Salty"),
-	FF_Sugary 	UMETA(DisplayName = "Sugary"),
 	FF_Spicy 	UMETA(DisplayName = "Spicy"),
 	FF_Peppery	UMETA(DisplayName = "Peppery"),
 	FF_None		UMETA(DisplayName = "None")
