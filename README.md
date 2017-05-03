@@ -15,31 +15,49 @@ The fueling stations have thus been designed to be as efficient as possible to m
 
 Rocket Chef is a fast-paced, immersive VR experience with a simple goal - quickly and accurately fulfill robot customer's orders in space. Use rocket boots to fly between customer locations and the kitchen. Complete as many orders as possible in the time allotted or risk angering your fickle robot customers. In order to help you create the different orders, multiple tools are provided, with different motion control actions associated with them.
 
+### How to play.
+
+1. Collect the order from the robot.
+2. Use the Teleportation pod to go to the kitchen
+3. Paint the fuel the correct color.
+4. Place the fuel in either the freezer or stove.
+5. Spice up the fuel on the shaker board.
+6. Deliver the fuel to the robot before the time is up!
+7. Repeat until you're overrun with robots.
+
 ### Techniques
 
 #### Mechanical
 
 ##### Rocket Flight
 
-/TODO: Krishna
+Our biggest innovation through this game are the Rocket Boots. Our goal was to create a movement system that was fast and novel while making sure that the player always felt stable and grounded. We built a helmet and parented it to the camera at the right distance to ensure that the player had a solid frame of reference without blocking out too much of the surroundings. We are incredibly proud of how this worked.
 
 ##### Grasping
 
-In order to make our hands more realistic, we used an animation BP that would grasp on button click. There are three states for the animation. The first is open, the second is "ready to close", and the third is "closed". 
+In order to make our hands more realistic, we used an animation BP that would grasp on button click. There are three states for the animation. The first is open, the second is "ready to close", and the third is "closed".
+
+##### Spice Shaking
+
+One of the kitchen assets that we implemented was shakers (salt, pepper, and spice). We wanted the asset to only activate if the user used the shaker the same way they would in real life. We created collision boxes below and above the shaker board and then checked to see that there was a small amount of time between the collisions with the two meshes. It took us some time to make sure that the shaking felt natural and intuitive, by playing around with the space between the two collision boxes and the speed at which the player needed to shake.
+
+##### Pulsing
+
+In order to make the game more intuitive, we thought it would be helpful to the user if all the touchable objects glowed. Then the user would have a finite amount of objects to check in the world and the objective would seem a lot more straight forward. The pulsing was technically interesting because we built them into the material instead of putting it on tick, to make sure that our frame rate was maintained.
 
 #### Visual
 
-##### Assets
+##### Main Lobby
 
-/TODO: Devesh
-
-##### Flashing Lights
-
-/TODO: Devesh
+We sourced most of our assets from the Epic Games marketplace. Some of the cooler things that we built on top of this was the "music notes" that come out of the saxophone player. We also built a lighting system that flashes failure when the player does not deliver the fuel in time. In addition, we built a display system that integrated into the diner that told us what the current order was. All of our robots were randomly spawned on the screen in terms of location, time, and color.
 
 ##### Kitchen
 
-/TODO: Carolina
+Again we sourced many assets from the Epic Games marketplace. We used different particle effects and sound effects in order to create a more immersive experience.
+
+* Color: We used particle effects to create an explosion of color that changed the material that our fuel was made of.
+
+* Temperature: We used smoke and fire effects in order to set the temperature of our fuel.
 
 #### Programming
 
