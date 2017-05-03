@@ -15,17 +15,41 @@ The fueling stations have thus been designed to be as efficient as possible to m
 
 Rocket Chef is a fast-paced, immersive VR experience with a simple goal - quickly and accurately fulfill robot customer's orders in space. Use rocket boots to fly between customer locations and the kitchen. Complete as many orders as possible in the time allotted or risk angering your fickle robot customers. In order to help you create the different orders, multiple tools are provided, with different motion control actions associated with them.
 
-### How to play
-
-
-
 ### Techniques
 
 #### Mechanical
 
+##### Rocket Flight
+
+/TODO: Krishna
+
+##### Grasping
+
+In order to make our hands more realistic, we used an animation BP that would grasp on button click. There are three states for the animation. The first is open, the second is "ready to close", and the third is "closed". 
+
 #### Visual
 
+##### Assets
+
+/TODO: Devesh
+
+##### Flashing Lights
+
+/TODO: Devesh
+
+##### Kitchen
+
+/TODO: Carolina
+
 #### Programming
+
+##### C++ Class
+
+We created a C++ class that instantiated our Robot Class. It was used to randomly generate different recipes, check that the recipes being delivered were accurate, and create the enumerators that dictated how the recipes were constructed. We found that using C++ was much faster in terms of debugging and development time, but the specific Unreal syntax and conventions were difficult to pick up at points. For example, enums must start with the letter E and actors must start with the letter A, otherwise the engine silently fails.
+
+##### Procedural Content
+
+/TODO: Natasha
 
 
 ### VR Mode
@@ -52,5 +76,8 @@ There were four specific challenges that stood out to us.
 
 ### What do we wish we had done differently?
 
+We are very happy with our final product. The one thing that we wish we had done was have more people play test our game and give us feedback. Everyone that we got feedback from was familiar with VR and had their own tendencies and nuances with how to use controllers and play space. It would be more interesting to hear from people that have never used a headset or haven't created games before, in order to see how intuitive they think the game is.
 
 ### What do we wish you had done differently?
+
+No complaints!
