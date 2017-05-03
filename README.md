@@ -1,7 +1,7 @@
 ## CIS 568 - Final Project: Rocket Chef
 ### Team members: Krishna Bharathala, Devesh Dayal, Natasha Narang, Carolina Zheng
 
-Check out our project here: [Youtube]
+Check out our project here: [Youtube](https://youtu.be/h0LXCx1KhmU)
 
 ### What is our game?
 
