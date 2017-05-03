@@ -67,8 +67,7 @@ We created a C++ class that instantiated our Robot Class. It was used to randoml
 
 ##### Procedural Content
 
-/TODO: Natasha
-
+For this aspect of our game, we decided to procedurally generate planets in space. To do so, we created a dynamic material that took in four base colors as well as a "cloud color" for the emissive noise. We then wrote a custom material function that performed vector calculations on the UV inputs, potential planet offset locations, and planet thickness, in order to give us an output texture that served as the base for our planet. The function also returned three normal vectors, which we then used to generated perturbed normal vectors to build a normal map as well as give us attributes for specularity, roughness, and metallicness of the resulting material. Finally, now that the material was created, in order to actually generate the planets, we spawned multiple small spheres all over the environment. We then, on construction, generated a random emissive base color, a scale and the ability for the planet to have programmatically generated rings (with a weighted probability). The end result was planets that generated in random locations with different colors and features every time the user ran a new game.
 
 ### VR Mode
 
